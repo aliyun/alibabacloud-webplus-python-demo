@@ -1,0 +1,37 @@
+{
+  "debug": false,
+  "logging": {
+    "level": "info"
+  },
+  "site": {
+    "id": "hzpiq39mwz@76908890916a50b"
+  },
+  "quickstart": {
+    "doc": {
+      "url": "https://help.aliyun.com/document_detail/118222.html"
+    },
+    "repo": {
+      "name": "alibabacloud-webplus-python-demo",
+      "url": "https://github.com/aliyun/alibabacloud-webplus-python-demo"
+    }
+  },
+  "app": {
+    "url": "https://webplus.console.aliyun.com/%(WP_APP_REGION_ID)s/app/%(WP_APP_ID)s/env"
+  },
+  "env": {
+    "url": "https://webplus.console.aliyun.com/%(WP_APP_REGION_ID)s/app/%(WP_APP_ID)s/env/%(WP_ENV_ID)s/overview"
+  },
+  "next": {
+    "step": {
+      "show": false,
+      "package": {
+        "url": "https://webplus-prod-%(WP_APP_REGION_ID)s.oss-%(WP_APP_REGION_ID)s.aliyuncs.com/quickstart/python/webplus-demo-python.zip"
+      }
+    }
+  },
+  "webplus": {
+    "console": {
+      "url": "https://webplus.console.aliyun.com"
+    }
+  }
+}

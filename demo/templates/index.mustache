@@ -1,0 +1,207 @@
+<!--
+ - MIT License
+ -
+ - Copyright (c) 2019-present Alibaba Group
+ -
+ - Permission is hereby granted, free of charge, to any person obtaining
+ - a copy of this software and associated documentation files (the
+ - "Software"), to deal in the Software without restriction, including
+ - without limitation the rights to use, copy, modify, merge, publish,
+ - distribute, sublicense, and/or sell copies of the Software, and to
+ - permit persons to whom the Software is furnished to do so, subject to
+ - the following conditions:
+ -
+ - The above copyright notice and this permission notice shall be
+ - included in all copies or substantial portions of the Software.
+ -
+ - THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ - EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ - MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ - NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ - LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ - OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ - WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{#i18n}}title{{/i18n}}</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png">
+    <link href="static/main.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="200">
+<script>
+!(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"{{siteId}}",appType:"web",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+})(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="{{consoleUrl}}"><i class="fas fa-home"></i> Web+</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-content">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link active" href="#section-home">{{#i18n}}home{{/i18n}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-next-steps">{{#i18n}}next.steps{{/i18n}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-features">{{#i18n}}features{{/i18n}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-whats-new">{{#i18n}}whats.new{{/i18n}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-footer">{{#i18n}}contact.us{{/i18n}}</a></li>
+                <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0">
+                    <a class="nav-link" href="{{quickstartDocUrl}}" target="_blank">
+                        <span class="pb_rounded-4 px-4">{{#i18n}}quickstart{{/i18n}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="{{quickstartRepoUrl}}" target="_blank" class="github-corner" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+</nav>
+
+<section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light"
+         id="section-home">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6">
+                <h2 class="heading mb-3">{{#i18n}}its.running{{/i18n}}</h2>
+                <div class="sub-heading">
+                    <p class="mb-4">{{#i18n}}congratulations [{{appUrl}}] [{{envs.appName}}] [{{envUrl}}] [{{envs.envName}}]{{/i18n}}</p>
+                    <p class="mb-5">{{#i18n}}what.to.do.next{{/i18n}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-next-steps">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center mb-5">
+                <h2>{{#i18n}}next.steps{{/i18n}}</h2>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab">
+                    <a class="nav-link py-2 mb-2 {{#envs.fromCLI}}active{{/envs.fromCLI}}" id="v-pills-cli-tab" data-toggle="pill" href="#v-pills-cli">{{#i18n}}cli{{/i18n}}</a>
+                    <a class="nav-link py-2 mb-2 {{#envs.fromConsole}}active{{/envs.fromConsole}}" id="v-pills-console-tab" data-toggle="pill" href="#v-pills-console">{{#i18n}}console{{/i18n}}</a>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="tab-content" id="v-pills-tab-content">
+                    <div class="tab-pane fade {{#envs.fromCLI}}show active{{/envs.fromCLI}}" id="v-pills-cli">
+                        {{^nextStep}}
+                        <ol>
+                            <li>{{#i18n}}ensure.folder [{{quickstartRepoName}}] [{{quickstartRepoUrl}}]{{/i18n}}</li>
+                            <li>
+                                {{#i18n}}run.commands{{/i18n}}
+                                <pre><code class="highlight">$ git checkout next-step
+$ mvn clean package
+$ wpctl deploy</code></pre>
+                            </li>
+                            <li>{{#i18n}}refresh.page{{/i18n}}</li>
+                        </ol>
+                        {{/nextStep}}
+                        {{#nextStep}}{{#i18n}}complete.cli [{{quickstartDocUrl}}]{{/i18n}}{{/nextStep}}
+                    </div>
+                    <div class="tab-pane fade {{#envs.fromConsole}}show active{{/envs.fromConsole}}" id="v-pills-console">
+                        {{^nextStep}}
+                        <ol>
+                            <li>{{#i18n}}download.new.version [{{nextStepPackageUrl}}]{{/i18n}}</li>
+                            <li>{{#i18n}}navigate.to.env.page [{{envUrl}}]{{/i18n}}</li>
+                            <li>{{#i18n}}click.deploy.button{{/i18n}}</li>
+                            <li>{{#i18n}}upload.new.package{{/i18n}}</li>
+                            <li>{{#i18n}}click.ok.button{{/i18n}}</li>
+                            <li>{{#i18n}}refresh.page{{/i18n}}</li>
+                        </ol>
+                        {{/nextStep}}
+                        {{#nextStep}}{{#i18n}}complete.console [{{quickstartDocUrl}}]{{/i18n}}{{/nextStep}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb_section pb_slant-light pb_pb-250" id="section-features">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center mb-5">
+                <h2>{{#i18n}}features{{/i18n}}</h2>
+                <p class="pb_font-20">{{#i18n}}slogan{{/i18n}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="media d-block pb_feature-v1 text-left">
+                    <div class="pb_icon py-4"><i class="fas fa-rocket pb_icon-gradient"></i></div>
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-3 heading">{{#i18n}}rapid.deployment{{/i18n}}</h5>
+                        <p class="text-sans-serif">{{#i18n}}rapid.deployment.desc{{/i18n}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="media d-block pb_feature-v1 text-left">
+                    <div class="pb_icon py-4"><i class="fas fa-headphones-alt pb_icon-gradient"></i></div>
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-3 heading">{{#i18n}}effortless.maintenance{{/i18n}}</h5>
+                        <p class="text-sans-serif">{{#i18n}}effortless.maintenance.desc{{/i18n}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="media d-block pb_feature-v1 text-left">
+                    <div class="pb_icon py-4"><i class="fas fa-chart-line pb_icon-gradient"></i></div>
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-3 heading">{{#i18n}}outofbox.monitoring{{/i18n}}</h5>
+                        <p class="text-sans-serif">{{#i18n}}outofbox.monitoring.desc{{/i18n}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="pb_footer" id="section-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p class="pb_pt-50">
+                    <img src="static/fonts/dingtalk-logo.svg" class="dingtalk">&nbsp;{{#i18n}}scan.qrcode{{/i18n}}
+                </p>
+                <img src="static/images/2512611a929cf8c3badfba67911b8e34.png" class="pb-5 pb_w-30" />
+                <p class="pb_font-14">© 2017 <a href="https://uicookies.com/">Landing</a> Free Bootstrap4. All Rights
+                    Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/">uicookies.com</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="pb_loader" class="fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#1d82ff">
+        </circle>
+    </svg>
+</div>
+<script type="text/javascript" src="static/bundle.js"></script>
+</body>
+
+</html>
